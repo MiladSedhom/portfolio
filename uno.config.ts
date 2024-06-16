@@ -8,6 +8,7 @@ export default defineConfig({
 		presetWebFonts({
 			provider: 'google',
 			fonts: {
+				display: 'Tiny5',
 				serif: 'Bricolage Grotesque',
 				sans: 'Poppins'
 			}
