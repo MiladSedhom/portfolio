@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Project from '$lib/components/Project.svelte';
+	import Project from '$lib/components/Project.svelte'
 </script>
 
 <main p-4 max-w-65ch m-auto>

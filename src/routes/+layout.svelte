@@ -1,6 +1,6 @@
 <script>
-	import 'virtual:uno.css';
-	import '@unocss/reset/tailwind.css';
+	import 'virtual:uno.css'
+	import '@unocss/reset/tailwind.css'
 </script>
 
 <div class="min-h-screen min-w-screen font-sans color-tcolor bg-bgcolor">

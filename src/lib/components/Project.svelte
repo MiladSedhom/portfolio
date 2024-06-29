@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { mouseSticky } from '$lib/actions/mouseSticky.svelte';
+	import { mouseSticky } from '$lib/actions/mouseSticky.svelte'
 
 	const {
 		name,
@@ -8,15 +8,15 @@
 		class: classes = undefined,
 		body = undefined,
 		...rest
-	}: Props = $props();
+	}: Props = $props()
 
 	type Props = {
-		name: string;
-		description: string;
-		link: string;
-		class?: string;
-		body?: string;
-	};
+		name: string
+		description: string
+		link: string
+		class?: string
+		body?: string
+	}
 </script>
 
 <div

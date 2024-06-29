@@ -5,5 +5,5 @@ export const mapRange = (
 	newMin: number,
 	newMax: number
 ) => {
-	return newMin + ((newMax - newMin) * (value - oldMin)) / (oldMax - oldMin);
-};
+	return newMin + ((newMax - newMin) * (value - oldMin)) / (oldMax - oldMin)
+}
