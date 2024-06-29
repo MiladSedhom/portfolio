@@ -8,6 +8,7 @@ export const mouseSticky = (node: HTMLElement) => {
 	const mouseMove = (e: MouseEvent) => {
 		const mouseX = e.clientX
 		const mouseY = e.clientY
+		rect = node.getBoundingClientRect()
 
 		mouse.x = mapRange((mouseX - rect.x) / rect.width, 0, 1, -1, 1)
 		mouse.y = mapRange((mouseY - rect.y) / rect.height, 0, 1, -1, 1)
