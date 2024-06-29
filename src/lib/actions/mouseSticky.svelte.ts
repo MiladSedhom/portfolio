@@ -12,33 +12,25 @@ export const mouseSticky = (node: HTMLElement) => {
 		mouse.x = mapRange((mouseX - rect.x) / rect.width, 0, 1, -1, 1)
 		mouse.y = mapRange((mouseY - rect.y) / rect.height, 0, 1, -1, 1)
 	}
-	const mouseEnter = () => {
+	const mouseEnter = async () => {
 		node.style.transitionDuration = '0s'
 	}
 	const mouseLeave = () => {
-		node.style.transition = 'transform 300ms ease-in'
+		node.style.transition = 'transform 500ms cubic-bezier(0, 0, 0.1, 1)'
 		mouse.x = 0
 		mouse.y = 0
 	}
-	const resizeHandler = (e: Event) => {
-		rect = node.getBoundingClientRect()
-	}
 
-	window.addEventListener('resize', resizeHandler)
 	node.addEventListener('mousemove', mouseMove)
 	node.addEventListener('mouseenter', mouseEnter)
 	node.addEventListener('mouseleave', mouseLeave)
 
 	$effect.pre(() => {
-		console.log('before: ', node.style.transform)
-		node.style.transform = `translateX(${8 * mouse.x}px) translateY(${4 * mouse.y}px) rotate(${-1 * mouse.x}deg)`
-		mouse.x
-		console.log('after: ', node.style.transform)
+		node.style.transform = `perspective(3000px) rotateX(${-20 * mouse.y}deg) rotateY(${10 * mouse.x}deg)`
 	})
 
 	return {
 		destroy() {
-			window.removeEventListener('resize', resizeHandler)
 			node.removeEventListener('mousemove', mouseMove)
 			node.removeEventListener('mouseenter', mouseEnter)
 			node.removeEventListener('mouseLeave', mouseLeave)
