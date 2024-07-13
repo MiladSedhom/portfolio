@@ -2,6 +2,7 @@ import { mapRange } from '$lib/utils'
 
 export const mouseSticky = (node: HTMLElement) => {
 	// the node has been mounted in the DOM
+
 	let rect = node.getBoundingClientRect()
 	const mouse = $state<{ x: number; y: number }>({ x: 0, y: 0 })
 
