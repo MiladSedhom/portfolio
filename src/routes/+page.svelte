@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Project from '$lib/components/Project.svelte'
-	import ProjectWithAction from '$lib/components/ProjectWithAction.svelte'
 </script>
 
 <main p-4 max-w-65ch m-auto>
@@ -28,8 +27,8 @@
 			description="a modern and intutive expenses tracker"
 			link="https://github.com/MiladSedhom/PennyPal"
 		/>
-		<ProjectWithAction
-			class="outline outline-2 outline-#219C84 bg-bgcolor"
+		<Project
+			class="border-dashed border-3 border-#219C84 bg-bgcolor"
 			name="Science Talk"
 			description="Social media application for students and students only."
 			link="https://github.com/MiladSedhom/grad-project"
