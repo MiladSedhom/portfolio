@@ -14,7 +14,7 @@ export const mouseSticky = (node: HTMLElement) => {
 		mouse.x = mapRange((mouseX - rect.x) / rect.width, 0, 1, -1, 1)
 		mouse.y = mapRange((mouseY - rect.y) / rect.height, 0, 1, -1, 1)
 	}
-	const mouseEnter = async () => {
+	const mouseEnter = () => {
 		node.style.transitionDuration = '0s'
 	}
 	const mouseLeave = () => {
