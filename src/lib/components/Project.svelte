@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { mouseSticky } from '$lib/actions/mouseSticky.svelte'
 	import { getRelativeMouse } from '$lib/getRelativeMouse.svelte'
 	import { onMount } from 'svelte'
-	import { fade, fly } from 'svelte/transition'
 
 	type Props = {
 		name: string
@@ -23,6 +21,7 @@
 
 	let container = $state<HTMLElement>()
 	let div = $state<HTMLElement>()
+	let aniDone = $state(false)
 	let isIn = $state<boolean>()
 	let mouse = getRelativeMouse(() => container, { min: -1, max: 1 })
 
@@ -32,24 +31,28 @@
 				if (e.isIntersecting) isIn = e.isIntersecting
 			})
 		})
-
 		container && observer.observe(container)
+
+		div?.addEventListener('animationend', () => {
+			aniDone = true
+		})
 	})
 
-	$effect.pre(() => {
+	$effect(() => {
 		if (!div) return
-		if (mouse.isHovering) div.style.transition = 'transform 0s cubic-bezier(0, 0, 0.1, 1)'
-		if (!mouse.isHovering) div.style.transition = 'transform 500ms cubic-bezier(0, 0, 0.1, 1)'
-		console.log('adjusting transitionDuration thing', div.style.transitionDuration)
+		if (mouse.isInside) div.style.transition = 'transform 0ms ease-out'
+		if (!mouse.isInside) div.style.transition = 'transform 500ms ease-out'
 	})
 </script>
 
 <div bind:this={container} class="fly-in" bg-neutral-300 border-rd-xl>
 	<div
 		bind:this={div}
-		style="transform: perspective(3000px) rotateX({-12 * mouse.y}deg) rotateY({8 *
-			mouse.x}deg) {mouse.isHovering && 'scale(.99)'};"
-		class="fly-in-delayed opacity-0 container min-h-25 text-3 border-rd-xl {classes} "
+		style="transform: perspective(3000px) rotateX({-20 * mouse.y}deg) rotateY({10 *
+			mouse.x}deg) {mouse.isInside ? 'scale(.99)' : ''};"
+		class:fly-in-delayed={!aniDone}
+		class:opacity-0={!aniDone}
+		class="min-h-25 text-3 border-rd-xl {classes}"
 		hover-shadow="xl opacity-20"
 		{...rest}
 	>
@@ -81,6 +84,7 @@
 		100% {
 			opacity: 1;
 			clip-path: inset(0);
+			transform: translateY(0);
 		}
 	}
 </style>
