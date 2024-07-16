@@ -24,7 +24,7 @@
 	let container = $state<HTMLElement>()
 	let div = $state<HTMLElement>()
 	let isIn = $state<boolean>()
-	let mouse = getRelativeMouse(() => container, { min: -1, max: 1 }) as { x: number; y: number }
+	let mouse = getRelativeMouse(() => container, { min: -1, max: 1 })
 
 	onMount(() => {
 		const observer = new IntersectionObserver((entries) => {
@@ -45,23 +45,40 @@
 </script>
 
 <div bind:this={container} bg-neutral-300 border-rd-xl>
-	{#if isIn}
-		<div
-			bind:this={div}
-			in:fly={{ duration: 1000, opacity: 0.9, y: 20 }}
-			style="transform: perspective(2500px) rotateX({-12 * mouse.y}deg) rotateY({8 *
-				mouse.x}deg) {mouse.isHovering && 'scale(.99)'};"
-			class="container min-h-25 text-3 border-rd-xl {classes} "
-			hover-shadow="xl opacity-20"
-			{...rest}
-		>
-			<a href={link} target="_blank" class="block min-h-full p-4">
-				<h1 fw-bold text-6 font-display>{name}</h1>
-				<p text-14px fw-semibolds>{description}</p>
-				{#if body}
-					<p text-3>{body}</p>
-				{/if}
-			</a>
-		</div>
-	{/if}
+	<div
+		bind:this={div}
+		in:fly={{ duration: 1000, opacity: 0.9, y: 20 }}
+		style="transform: perspective(3000px) rotateX({-12 * mouse.y}deg) rotateY({8 *
+			mouse.x}deg) {mouse.isHovering && 'scale(.99)'};"
+		class="fly-in container min-h-25 text-3 border-rd-xl {classes} "
+		hover-shadow="xl opacity-20"
+		{...rest}
+	>
+		<a href={link} target="_blank" class="block min-h-full p-4">
+			<h1 fw-bold text-6 font-display>{name}</h1>
+			<p text-14px fw-semibolds>{description}</p>
+			{#if body}
+				<p text-3>{body}</p>
+			{/if}
+		</a>
+	</div>
 </div>
+
+<style>
+	.fly-in {
+		animation: fly-in 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	@keyframes fly-in {
+		0% {
+			opacity: 0.7;
+			clip-path: inset(0 0 100% 0);
+			transform: translateY(100%) scale(0.95);
+		}
+		100% {
+			opacity: 1;
+			clip-path: inset(0);
+			transform: translateY(0px) scale(1);
+		}
+	}
+</style>
