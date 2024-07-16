@@ -6,7 +6,7 @@
 <main p-4 max-w-65ch m-auto>
 	<h1
 		class="slide-prime"
-		text="tcolor 12"
+		text="tcolor 8"
 		fw-bold
 		font-display
 		inline-block
@@ -23,13 +23,13 @@
 
 	<section flex="~ col gap-8">
 		<Project
-			class="bg-green-600"
+			class="outline outline-2 outline-green-600 bg-bgcolor"
 			name="PennyPal"
 			description="a modern and intutive expenses tracker"
 			link="https://github.com/MiladSedhom/PennyPal"
 		/>
 		<ProjectWithAction
-			class="bg-#219C84"
+			class="outline outline-2 outline-#219C84 bg-bgcolor"
 			name="Science Talk"
 			description="Social media application for students and students only."
 			link="https://github.com/MiladSedhom/grad-project"
@@ -40,14 +40,14 @@
 
 <style>
 	.slide-prime {
-		animation: slide-prime 1500ms cubic-bezier(0.23, 1, 0.32, 1);
+		animation: slide-prime 1200ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 	@keyframes slide-prime {
 		0% {
-			clip-path: inset(0 100% 0 100% round 70rem);
+			clip-path: inset(0 100% 0 100% round 40rem);
 			transform: translateX(-100%);
 		}
-		89% {
+		90% {
 			clip-path: inset(round 2rem);
 			transform: translateX(15px);
 		}

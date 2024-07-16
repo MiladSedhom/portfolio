@@ -34,20 +34,20 @@
 	})
 </script>
 
-<div bind:this={container} h-50 bg-neutral-300>
+<div bind:this={container} bg-neutral-300 border-rd-xl>
 	{#if isIn}
 		<div
 			use:mouseSticky
 			in:fly={{ duration: 1000, opacity: 0.7, y: 50 }}
-			class="container h-50 min-h-50 outline-2 outline-solid text-3 {classes}"
+			class="container min-h-25 text-3 border-rd-xl {classes} "
 			hover-shadow="xl opacity-20"
 			{...rest}
 		>
 			<a href={link} target="_blank" class="block min-h-full p-4">
-				<h1 fw-bold text-8 font-display>{name}</h1>
-				<p>{description}</p>
+				<h1 fw-bold text-6 font-display>{name}</h1>
+				<p text-14px fw-semibolds>{description}</p>
 				{#if body}
-					<p>{body}</p>
+					<p text-3>{body}</p>
 				{/if}
 			</a>
 		</div>
