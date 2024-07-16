@@ -21,7 +21,7 @@
 
 	let container = $state<HTMLElement>()
 	let div = $state<HTMLElement>()
-	let aniDone = $state(false)
+	let animationDone = $state(false)
 	let isIn = $state<boolean>()
 	let mouse = getRelativeMouse(() => container, { min: -1, max: 1 })
 
@@ -32,12 +32,7 @@
 			})
 		})
 		container && observer.observe(container)
-
-		div?.addEventListener('animationend', () => {
-			aniDone = true
-		})
 	})
-
 	$effect(() => {
 		if (!div) return
 		if (mouse.isInside) div.style.transition = 'transform 0ms ease-out'
@@ -50,10 +45,13 @@
 		bind:this={div}
 		style="transform: perspective(3000px) rotateX({-20 * mouse.y}deg) rotateY({10 *
 			mouse.x}deg) {mouse.isInside ? 'scale(.99)' : ''};"
-		class:fly-in-delayed={!aniDone}
-		class:opacity-0={!aniDone}
+		style:opacity={animationDone ? '1' : '0'}
+		class:fly-in-delayed={!animationDone}
 		class="min-h-25 text-3 border-rd-xl {classes}"
 		hover-shadow="xl opacity-20"
+		onanimationend={() => {
+			animationDone = true
+		}}
 		{...rest}
 	>
 		<a href={link} target="_blank" class="block min-h-full p-4">
