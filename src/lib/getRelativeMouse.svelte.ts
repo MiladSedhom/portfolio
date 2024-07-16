@@ -3,17 +3,17 @@ import { mapRange } from './utils'
 type fn = (
 	n: () => HTMLElement | undefined,
 	range: { min: number; max: number }
-) => { x: number; y: number; isHovering: boolean }
+) => { x: number; y: number; isInside: boolean }
 
 export const getRelativeMouse: fn = (n, range = { min: 0, max: 1 }) => {
 	let node = $derived(n())
-	const mouse = $state({ x: 0, y: 0, isHovering: false })
+	const mouse = $state({ x: 0, y: 0, isInside: false })
 
-	$effect.pre(() => {
+	$effect(() => {
 		if (!node) return
 
 		const mouseEnter = () => {
-			mouse.isHovering = true
+			mouse.isInside = true
 		}
 
 		const mouseMove = (e: MouseEvent) => {
@@ -26,13 +26,9 @@ export const getRelativeMouse: fn = (n, range = { min: 0, max: 1 }) => {
 		}
 
 		const mouseLeave = () => {
-			mouse.isHovering = false
-			console.log('isHover = false')
-			requestAnimationFrame(() => {
-				mouse.x = 0
-				mouse.y = 0
-				console.log('mouse.xy = 0')
-			})
+			mouse.isInside = false
+			mouse.x = 0
+			mouse.y = 0
 		}
 
 		node.addEventListener('mouseenter', mouseEnter)
