@@ -5,7 +5,7 @@ export default defineConfig({
 	presets: [
 		presetUno(),
 		presetAttributify(),
-		presetIcons(),
+		presetIcons({ extraProperties: { display: 'inline-block' } }),
 		presetWebFonts({
 			provider: 'google',
 			fonts: {
