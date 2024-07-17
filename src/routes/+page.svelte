@@ -13,8 +13,26 @@
 		</h1>
 
 		<div class="slide-prime-right">
-			{@render iconLink('http://x.com/winter1v9', 'i-ri-twitter-x-fill')}
-			{@render iconLink('http://github.com/MiladSedhom', 'i-logos-github-icon')}
+			<a
+				href="http://x.com/winter1v9"
+				target="_blank"
+				class="group inline-block border-rd-50% p-2 line-height-1 pos-relative"
+			>
+				<div
+					class="rotate w-36px h-36px border-rd-50% pos-absolute top-0 left-0 hidden"
+					group-hover="block"
+					outline="dotted 3 primary offset--2"
+				></div>
+				<div class="i-ri-twitter-x-fill?mask bg-tcolor text-5"></div>
+			</a>
+			<a
+				href="http://github.com/MiladSedhom"
+				target="_blank"
+				class="inline-block border-rd-50% p-2 line-height-1"
+				hover-outline="dotted 3 primary offset--2"
+			>
+				<div class="i-logos-github-icon?mask bg-tcolor text-5"></div>
+			</a>
 		</div>
 	</div>
 
@@ -124,12 +142,12 @@
 	@keyframes rotate {
 		0% {
 			opacity: 0.7;
-			transform: rotate(540deg);
+			transform: rotate(360deg);
 		}
 
 		100% {
 			opacity: 1;
-			transform: rotate(360deg);
+			transform: rotate(180deg);
 		}
 	}
 </style>
