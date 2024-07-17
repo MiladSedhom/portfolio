@@ -9,7 +9,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"deploy": "pnpm build && pnpx gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@iconify-json/logos": "^1.1.43",
@@ -18,6 +19,7 @@
 		"@sveltejs/adapter-static": "^3.0.2",
 		"@sveltejs/kit": "^2.5.18",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
+		"gh-pages": "^6.1.1",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.5",
 		"svelte": "^5.0.0-next.169",
