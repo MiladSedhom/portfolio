@@ -142,7 +142,7 @@
 		}
 	}
 	.rotate {
-		animation: rotate 2000ms cubic-bezier(0, 0, 0.1, 1) forwards;
+		animation: rotate 3500ms cubic-bezier(0, 0, 0.1, 1) forwards;
 	}
 	@keyframes rotate {
 		0% {
