@@ -124,12 +124,12 @@
 	@keyframes rotate {
 		0% {
 			opacity: 0.7;
-			transform: rotate(180deg);
+			transform: rotate(540deg);
 		}
 
 		100% {
 			opacity: 1;
-			transform: rotate(0deg);
+			transform: rotate(360deg);
 		}
 	}
 </style>
