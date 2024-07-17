@@ -6,12 +6,12 @@
 	<h1
 		class="slide-prime text-tcolor text-6 fw-bold font-display inline-block m-b-6
 		pos-relative"
-		underline="~ wavy 2 primary offset-4"
+		underline="~ wavy 2 orange-600 offset-4"
 	>
 		Milad Sedhom
 	</h1>
 
-	<p text-gray-5>
+	<p text-tcolor-1>
 		Hi there, I am a fullstack web developer, passionate about creating pretty UIs and unique user
 		experiences I am currently studying Computer Science and Physics.
 	</p>
@@ -42,7 +42,7 @@
 	}
 	@keyframes slide-prime {
 		0% {
-			clip-path: inset(0 100% 0 100% round 40rem);
+			clip-path: inset(0 100% 0 100%);
 			transform: translateX(-100%);
 		}
 		/* 90% {
