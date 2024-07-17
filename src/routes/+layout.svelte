@@ -10,8 +10,8 @@
 
 <style>
 	:global(:root) {
-		--h: 29;
-		--primary: hsl(var(--h), 80%, 65%);
+		--h: 160;
+		--primary: hsl(var(--h), 80%, 50%);
 		--bg: hsl(var(--h), 20%, 90%);
 		--text: hsl(var(--h), 15%, 15%);
 		--text-alt: hsl(var(--h), 8%, 95%);

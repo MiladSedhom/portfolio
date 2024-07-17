@@ -4,27 +4,26 @@
 
 <main p-4 max-w-65ch m-auto>
 	<h1
-		class="slide-prime"
-		text="tcolor 8"
-		fw-bold
-		font-display
-		inline-block
-		bg="amber"
-		p-2
-		border-rd-xl
+		class="slide-prime text-tcolor text-6 fw-bold font-display inline-block m-b-6
+		pos-relative"
+		underline="~ wavy 2 primary offset-4"
 	>
 		Milad Sedhom
 	</h1>
 
-	<p>Hi there, I am a web deverloper, passionate about creating pretty UIs</p>
+	<p text-gray-5>
+		Hi there, I am a fullstack web developer, passionate about creating pretty UIs and unique user
+		experiences I am currently studying Computer Science and Physics.
+	</p>
 
-	<div p-10></div>
+	<div p-5></div>
 
-	<section flex="~ col gap-8">
+	<h2 class="text-4 fw-bold m-b-4 font-display">Projects</h2>
+	<section flex="~ col gap-6">
 		<Project
 			class="border-dashed border-3 border-green-600 bg-bgcolor"
 			name="PennyPal"
-			description="a modern and intutive expenses tracker"
+			description="a modern and intuitive expenses tracker"
 			link="https://github.com/MiladSedhom/PennyPal"
 		/>
 		<Project
