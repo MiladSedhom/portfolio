@@ -25,12 +25,17 @@
 				></div>
 				<div class="i-ri-twitter-x-fill?mask bg-tcolor text-5"></div>
 			</a>
+
 			<a
 				href="http://github.com/MiladSedhom"
 				target="_blank"
-				class="inline-block border-rd-50% p-2 line-height-1"
-				hover-outline="dotted 3 primary offset--2"
+				class="group inline-block border-rd-50% p-2 line-height-1 pos-relative"
 			>
+				<div
+					class="rotate w-36px h-36px border-rd-50% pos-absolute top-0 left-0 hidden"
+					group-hover="block"
+					outline="dotted 3 primary offset--2"
+				></div>
 				<div class="i-logos-github-icon?mask bg-tcolor text-5"></div>
 			</a>
 		</div>
@@ -137,17 +142,17 @@
 		}
 	}
 	.rotate {
-		animation: rotate 2000ms cubic-bezier(0, 0, 0.1, 1);
+		animation: rotate 2000ms cubic-bezier(0, 0, 0.1, 1) forwards;
 	}
 	@keyframes rotate {
 		0% {
 			opacity: 0.7;
-			transform: rotate(360deg);
+			transform: rotate(270deg);
 		}
 
 		100% {
 			opacity: 1;
-			transform: rotate(180deg);
+			transform: rotate(90deg);
 		}
 	}
 </style>
