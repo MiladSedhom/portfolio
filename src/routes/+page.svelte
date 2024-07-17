@@ -13,22 +13,8 @@
 		</h1>
 
 		<div class="slide-prime-right">
-			<a
-				href="http://x.com/winter1v9"
-				target="_blank"
-				class="inline-block border-rd-50% p-2 line-height-1"
-				hover-outline="dotted 3 primary offset--2"
-			>
-				<div class="i-ri-twitter-x-fill?mask bg-tcolor text-5"></div>
-			</a>
-			<a
-				href="http://github.com/MiladSedhom"
-				target="_blank"
-				class="inline-block border-rd-50% p-2 line-height-1"
-				hover-outline="dotted 3 primary offset--2"
-			>
-				<div class="i-logos-github-icon?mask bg-tcolor text-5"></div>
-			</a>
+			{@render iconLink('http://x.com/winter1v9', 'i-ri-twitter-x-fill')}
+			{@render iconLink('http://github.com/MiladSedhom', 'i-logos-github-icon')}
 		</div>
 	</div>
 
@@ -92,6 +78,17 @@
 	</section>
 </main>
 
+{#snippet iconLink(href: string, icon: string)}
+	<a {href} target="_blank" class="group inline-block border-rd-50% p-2 line-height-1 pos-relative">
+		<div
+			class="rotate w-36px h-36px border-rd-50% pos-absolute top-0 left-0 hidden"
+			group-hover="block"
+			outline="dotted 3 primary offset--2"
+		></div>
+		<div class="{icon}?mask bg-tcolor text-5"></div>
+	</a>
+{/snippet}
+
 <style>
 	.slide-prime-left {
 		animation: slide-prime-left 1000ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -119,6 +116,20 @@
 		100% {
 			clip-path: inset(0);
 			transform: translateX(0);
+		}
+	}
+	.rotate {
+		animation: rotate 2000ms cubic-bezier(0, 0, 0.1, 1);
+	}
+	@keyframes rotate {
+		0% {
+			opacity: 0.7;
+			transform: rotate(180deg);
+		}
+
+		100% {
+			opacity: 1;
+			transform: rotate(0deg);
 		}
 	}
 </style>
