@@ -19,7 +19,7 @@
 				class="inline-block border-rd-50% p-2 line-height-1"
 				hover-outline="dotted 3 primary offset--2"
 			>
-				<div class="i-logos-twitter?mask bg-tcolor text-5"></div>
+				<div class="i-ri-twitter-x-fill?mask bg-tcolor text-5"></div>
 			</a>
 			<a
 				href="http://github.com/MiladSedhom"
@@ -42,13 +42,18 @@
 	<h2 class="text-4 fw-bold m-b-4 font-display">Projects</h2>
 	<section flex="~ col gap-6">
 		<Card class="border-dashed border-3 border-green-600 bg-bgcolor">
-			<a
-				href="https://github.com/MiladSedhom/PennyPal"
-				target="_blank"
-				class="block min-h-full p-4"
-			>
+			<div class="block min-h-full p-4">
 				<div flex justify-between>
-					<h1 fw-bold text-5 font-display>PennyPal</h1>
+					<a
+						href="https://github.com/MiladSedhom/PennyPal"
+						target="_blank"
+						class="fw-bold text-5 font-display"
+					>
+						<span inline-flex items-center>
+							PennyPal
+							<div class="i-ri-arrow-right-up-line bg-tcolor-1 text-4"></div>
+						</span>
+					</a>
 					<div p-2>
 						<div class="i-logos-svelte-icon text-5"></div>
 						<div class="i-logos-prisma text-5"></div>
@@ -56,16 +61,21 @@
 					</div>
 				</div>
 				<p text-14px>a modern and intuitive expenses tracker</p>
-			</a>
+			</div>
 		</Card>
 		<Card class="border-dashed border-3 border-#219C84 bg-bgcolor">
-			<a
-				href="https://github.com/MiladSedhom/grad-project"
-				target="_blank"
-				class="block min-h-full p-4"
-			>
+			<div class="block min-h-full p-4">
 				<div flex justify-between>
-					<h1 fw-bold text-5 font-display>Science Talk</h1>
+					<a
+						href="https://github.com/MiladSedhom/grad-project"
+						target="_blank"
+						class="fw-bold text-5 font-display"
+					>
+						<span inline-flex items-center>
+							Science Talk
+							<div class="i-ri-arrow-right-up-line bg-tcolor-1 text-4"></div>
+						</span>
+					</a>
 					<div p-2>
 						<div class="i-logos-svelte-icon text-5"></div>
 						<div class="i-logos-prisma text-5"></div>
@@ -77,8 +87,8 @@
 					Was made by a team of 2 as a graduation project for Department of Physics and Computer
 					Science, Faculty of Science, Ain Shams university
 				</p>
-			</a>
-		</Card>
+			</div></Card
+		>
 	</section>
 </main>
 
