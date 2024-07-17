@@ -5,6 +5,7 @@ export default defineConfig({
 	presets: [
 		presetUno(),
 		presetAttributify(),
+		presetIcons(),
 		presetWebFonts({
 			provider: 'google',
 			fonts: {
