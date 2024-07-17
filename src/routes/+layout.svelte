@@ -10,10 +10,11 @@
 
 <style>
 	:global(:root) {
-		--h: 160;
-		--primary: hsl(var(--h), 80%, 50%);
-		--bg: hsl(var(--h), 20%, 90%);
-		--text: hsl(var(--h), 15%, 15%);
-		--text-alt: hsl(var(--h), 8%, 95%);
+		--primary: hsl(18, 90%, 48%);
+		--bg: hsl(18, 45%, 85%);
+		--shadows: hsl(18, 15%, 77%);
+		--text: hsl(18, 15%, 15%);
+		--text-1: hsl(18, 15%, 35%);
+		--text-alt: hsl(18, 40%, 90%);
 	}
 </style>

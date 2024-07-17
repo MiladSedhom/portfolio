@@ -40,7 +40,7 @@
 	})
 </script>
 
-<div bind:this={container} class="fly-in" bg-neutral-300 border-rd-xl>
+<div bind:this={container} class="fly-in bg-shadows border-rd-xl">
 	<div
 		bind:this={div}
 		style="transform: perspective(3000px) rotateX({-20 * mouse.y}deg) rotateY({10 *

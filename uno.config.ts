@@ -23,9 +23,11 @@ export default defineConfig({
 	theme: {
 		colors: {
 			primary: 'var(--primary)',
+			bgcolor: 'var(--bg)',
+			shadows: 'var(--shadows)',
 			tcolor: 'var(--text)',
-			'tcolor-alt': 'var(--text-alt)',
-			bgcolor: 'var(--bg)'
+			'tcolor-1': 'var(--text-1)',
+			'tcolor-alt': 'var(--text-alt)'
 		}
 	}
 })
