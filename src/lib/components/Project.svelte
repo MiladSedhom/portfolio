@@ -55,7 +55,7 @@
 		{...rest}
 	>
 		<a href={link} target="_blank" class="block min-h-full p-4">
-			<h1 fw-bold text-6 font-display>{name}</h1>
+			<h1 fw-bold text-5 font-display>{name}</h1>
 			<p text-14px fw-semibolds>{description}</p>
 			{#if body}
 				<p text-3>{body}</p>
@@ -66,7 +66,7 @@
 
 <style>
 	.fly-in-delayed {
-		animation: fly-in 1000ms cubic-bezier(0.23, 1, 0.32, 1) 500ms forwards;
+		animation: fly-in 700ms cubic-bezier(0.23, 1, 0.32, 1) 500ms forwards;
 	}
 
 	.fly-in {
