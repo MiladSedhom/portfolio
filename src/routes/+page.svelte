@@ -48,7 +48,7 @@
 
 	<div p-5></div>
 
-	<h2 class="text-4 fw-bold m-b-4 font-display">Projects</h2>
+	<h2 class="text-4 fw-bold m-b-4 font-display">Recent Projects</h2>
 	<section flex="~ col gap-6">
 		<Card class="border-dashed border-3 border-green-600 bg-bgcolor">
 			<div class="block min-h-full p-4">
