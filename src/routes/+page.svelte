@@ -16,6 +16,7 @@
 			<a
 				href="http://x.com/winter1v9"
 				target="_blank"
+				aria-label="Go to my twitter profile"
 				class="group inline-block border-rd-50% p-2 line-height-1 pos-relative"
 			>
 				<div
@@ -29,6 +30,7 @@
 			<a
 				href="http://github.com/MiladSedhom"
 				target="_blank"
+				aria-label="Go to my github profile"
 				class="group inline-block border-rd-50% p-2 line-height-1 pos-relative"
 			>
 				<div
@@ -56,6 +58,7 @@
 					<a
 						href="https://github.com/MiladSedhom/PennyPal"
 						target="_blank"
+						aria-label="View this project on github"
 						class="fw-bold text-5 font-display"
 					>
 						<span inline-flex items-center>
@@ -78,6 +81,7 @@
 					<a
 						href="https://github.com/MiladSedhom/grad-project"
 						target="_blank"
+						aria-label="View this project on github"
 						class="fw-bold text-5 font-display"
 					>
 						<span inline-flex items-center>
