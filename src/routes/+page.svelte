@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Card from '$lib/components/Card.svelte'
+	import CardT from '$lib/components/CardT.svelte'
 </script>
 
 <main p-4 max-w-65ch m-auto>
@@ -75,7 +76,7 @@
 				<p text-14px>a modern and intuitive expenses tracker</p>
 			</div>
 		</Card>
-		<Card class="border-dashed border-3 border-#219C84 bg-bgcolor">
+		<CardT class="border-dashed border-3 border-#219C84 bg-bgcolor">
 			<div class="block min-h-full p-4">
 				<div flex justify-between>
 					<a
@@ -100,7 +101,7 @@
 					Was made by a team of 2 as a graduation project for Department of Physics and Computer
 					Science, Faculty of Science, Ain Shams university
 				</p>
-			</div></Card
+			</div></CardT
 		>
 	</section>
 </main>
