@@ -15,9 +15,8 @@
 	let mouse = getRelativeMouse(() => container, { min: -1, max: 1 })
 
 	$effect(() => {
-		if (!div) return
-		if (mouse.isInside) div.style.transition = 'transform 0ms ease-out'
-		if (!mouse.isInside) div.style.transition = 'transform 500ms ease-out'
+		if (mouse.isInside) div!.style.transitionDuration = '0s'
+		if (!mouse.isInside) div!.style.transition = 'transform 1200ms var(--spring-easing-extra)'
 	})
 </script>
 
@@ -49,6 +48,16 @@
 			0.9855 59%,
 			1.0044 73%,
 			0.9986 88%,
+			1
+		);
+		--spring-easing-extra: linear(
+			0,
+			1.4572 16%,
+			0.7788 28%,
+			1.1528 44%,
+			0.9255 59%,
+			1.0344 73%,
+			0.9926 88%,
 			1
 		);
 	}
