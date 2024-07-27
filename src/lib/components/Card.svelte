@@ -25,8 +25,8 @@
 	<div
 		bind:this={div}
 		class="min-h-25 text-3 border-rd-xl {classes}"
-		class:fly-in-delayed={!animationDone}
 		style:opacity={animationDone ? '1' : '0'}
+		class:fly-in-delayed={!animationDone}
 		style="transform: perspective(3000px) rotateX({-20 * mouse.y}deg) rotateY({10 *
 			mouse.x}deg) {mouse.isInside ? 'scale(.99)' : ''};"
 		hover-shadow="xl opacity-20"
@@ -40,12 +40,25 @@
 </div>
 
 <style>
+	:global(:root) {
+		--spring-easing: linear(
+			0,
+			1.2272 16%,
+			0.8788 28%,
+			1.0428 44%,
+			0.9855 59%,
+			1.0044 73%,
+			0.9986 88%,
+			1
+		);
+	}
+
 	.fly-in-delayed {
-		animation: fly-in 700ms cubic-bezier(0.23, 1, 0.32, 1) 500ms forwards;
+		animation: fly-in 1200ms var(--spring-easing) 450ms forwards;
 	}
 
 	.fly-in {
-		animation: fly-in 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+		animation: fly-in 600ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 
 	@keyframes fly-in {
