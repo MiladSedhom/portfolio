@@ -13,11 +13,6 @@
 	let div = $state<HTMLElement>()
 	let animationDone = $state(false)
 	let mouse = getRelativeMouse(() => container, { min: -1, max: 1 })
-
-	$effect(() => {
-		if (mouse.isInside) div!.style.transitionDuration = '0s'
-		if (!mouse.isInside) div!.style.transition = 'transform 1200ms var(--spring-easing-extra)'
-	})
 </script>
 
 <div bind:this={container} class="fly-in bg-shadows border-rd-xl">
