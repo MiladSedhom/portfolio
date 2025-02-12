@@ -44,8 +44,9 @@
 	</div>
 
 	<p text-tcolor-1>
-		Hi there, I am a fullstack web developer, passionate about creating pretty UIs and unique user
-		experiences I am currently studying Computer Science and Physics.
+		Hi there! I'm a nerd... umm I mean a fullstack web developer 😅 I enjoy crafting beautiful user
+		interfaces and memorable digital experiences. With a foundation in Computer Science and Physics,
+		I combine technical expertise with creative innovation to build engaging web solutions.
 	</p>
 
 	<div p-5></div>
