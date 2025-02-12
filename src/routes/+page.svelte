@@ -44,7 +44,7 @@
 	</div>
 
 	<p text-tcolor-1>
-		Hi there! I'm a nerd... umm I mean a fullstack web developer 😅 I enjoy crafting beautiful user
+		Hi there! I'm a nerd... umm I mean a fullstack web developer. I enjoy crafting beautiful user
 		interfaces and memorable digital experiences. With a foundation in Computer Science and Physics,
 		I combine technical expertise with creative innovation to build engaging web solutions.
 	</p>
