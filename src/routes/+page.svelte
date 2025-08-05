@@ -98,7 +98,7 @@
 					</div>
 					<span class="text-3 text-tcolor-1">10/2024 - 4/2025</span>
 				</div>
-				<ul class="text-14px text-tcolor-1 list-disc list-inside space-y-1">
+				<ul class="text-14px text-tcolor-1 list-none list-inside space-y-1">
 					<li>
 						Led web application development using React with complex UI components and state
 						management
@@ -125,7 +125,7 @@
 					</div>
 					<span class="text-3 text-tcolor-1">05/2024 - 08/2024</span>
 				</div>
-				<ul class="text-14px text-tcolor-1 list-disc list-inside space-y-1">
+				<ul class="text-14px text-tcolor-1 list-none list-inside space-y-1">
 					<li>Built web applications with React using Redux, TanStack Query, and Ant Design</li>
 					<li>Contributed to mobile app development using Flutter for cross-platform experience</li>
 					<li>Participated in code reviews and agile development processes</li>
