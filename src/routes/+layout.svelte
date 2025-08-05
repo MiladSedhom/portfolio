@@ -11,7 +11,7 @@
 <style>
 	:global(:root) {
 		--primary: hsl(18, 90%, 48%);
-		--bg: hsl(18, 15%, 95%);
+		--bg: hsl(18, 8%, 95%);
 		--shadows: hsl(202, 10%, 84%);
 		--text: hsl(18, 15%, 15%);
 		--text-1: hsl(18, 15%, 35%);

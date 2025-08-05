@@ -44,12 +44,95 @@
 	</div>
 
 	<p text-tcolor-1>
-		Hi there! I'm a nerd... umm I mean a fullstack web developer. I enjoy crafting beautiful user
-		interfaces and memorable digital experiences. With a foundation in Computer Science and Physics,
-		I combine technical expertise with creative innovation to build engaging web solutions.
+		Hello! I'm a fullstack developer passionate about creating meaningful digital experiences. I
+		enjoy every part of the process – from figuring out how things should work to making sure they
+		feel great to use.
+		<a
+			href="https://docs.google.com/document/d/1z1kJvo1gIBqgginSPViKgkoqldOc5lZ0cXtRa7RR9Eo/edit?usp=sharing"
+			target="_blank"
+			aria-label="View my CV"
+			class="flex items-center text-tcolor-1 font-semibold hover:text-primary transition-colors"
+		>
+			<span class="text-14px">Full Resume</span>
+			<span class="i-ri-arrow-right-up-line text-5"></span>
+		</a>
 	</p>
 
 	<div p-5></div>
+
+	<h2 class="text-4 fw-bold m-b-4 font-display">Work Experience</h2>
+	<section flex="~ col gap-4" m-b-8>
+		<Card class="border-dashed border-3 border-#7123ba bg-bgcolor">
+			<div class="block min-h-full p-4">
+				<div flex justify-between items-start m-b-2>
+					<div>
+						<h3 class="fw-bold text-4 font-display">PlayPlex</h3>
+						<p class="text-3 text-tcolor-1">Fullstack Developer</p>
+					</div>
+					<span class="text-3 text-tcolor-1">5/2025 - Present</span>
+				</div>
+				<ul class="text-14px text-tcolor-1 list-none list-inside space-y-1">
+					<li>
+						Built comprehensive e-commerce marketplace for gaming services with advanced dashboard
+						features
+					</li>
+					<li>
+						Architected backend systems with tRPC and PostgreSQL, creating order management
+						workflows and digital inventory systems with CSV import/export capabilities, implemented
+						stock reservation system during payment sessions
+					</li>
+					<li>
+						Implemented comprehensive testing suites including unit tests and integration tests,
+						ensuring code quality and system reliability
+					</li>
+				</ul>
+			</div>
+		</Card>
+
+		<Card class="border-dashed border-3 border-#117070 bg-bgcolor">
+			<div class="block min-h-full p-4">
+				<div flex justify-between items-start m-b-2>
+					<div>
+						<h3 class="fw-bold text-4 font-display">Bench HR</h3>
+						<p class="text-3 text-tcolor-1">Frontend Developer</p>
+					</div>
+					<span class="text-3 text-tcolor-1">10/2024 - 4/2025</span>
+				</div>
+				<ul class="text-14px text-tcolor-1 list-disc list-inside space-y-1">
+					<li>
+						Led web application development using React with complex UI components and state
+						management
+					</li>
+					<li>
+						Participated in daily standups and sprint planning for cross-functional team
+						coordination
+					</li>
+					<li>
+						Contributed to API design discussions to ensure optimal frontend-backend integration
+					</li>
+				</ul>
+			</div>
+		</Card>
+
+		<Card class="border-dashed border-3 border-#219ac2 bg-bgcolor">
+			<div class="block min-h-full p-4">
+				<div flex justify-between items-start m-b-2>
+					<div>
+						<h3 class="fw-bold text-4 font-display">Kian Solutions</h3>
+						<p class="text-3 text-tcolor-1">
+							Fullstack Software <span class="font-semibold"> Intern </span>
+						</p>
+					</div>
+					<span class="text-3 text-tcolor-1">05/2024 - 08/2024</span>
+				</div>
+				<ul class="text-14px text-tcolor-1 list-disc list-inside space-y-1">
+					<li>Built web applications with React using Redux, TanStack Query, and Ant Design</li>
+					<li>Contributed to mobile app development using Flutter for cross-platform experience</li>
+					<li>Participated in code reviews and agile development processes</li>
+				</ul>
+			</div>
+		</Card>
+	</section>
 
 	<h2 class="text-4 fw-bold m-b-4 font-display">Recent Projects</h2>
 	<section flex="~ col gap-6">
@@ -106,18 +189,13 @@
 	</section>
 </main>
 
-{#snippet iconLink(href: string, icon: string)}
-	<a {href} target="_blank" class="group inline-block border-rd-50% p-2 line-height-1 pos-relative">
-		<div
-			class="rotate w-36px h-36px border-rd-50% pos-absolute top-0 left-0 hidden"
-			group-hover="block"
-			outline="dotted 3 primary offset--2"
-		></div>
-		<div class="{icon}?mask bg-tcolor text-5"></div>
-	</a>
-{/snippet}
-
 <style>
+	li::before {
+		content: '•';
+		font-size: 1.25rem;
+		margin-right: 6px;
+	}
+
 	.slide-prime-left {
 		animation: slide-prime-left 1000ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
