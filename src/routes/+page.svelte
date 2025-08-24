@@ -61,7 +61,7 @@
 	<div p-5></div>
 
 	<h2 class="text-4 fw-bold m-b-4 font-display">Work Experience</h2>
-	<section flex="~ col gap-4" m-b-8>
+	<section flex="~ col gap-6" m-b-8>
 		<Card class="border-dashed border-3 border-#7123ba bg-bgcolor">
 			<div class="block min-h-full p-4">
 				<div flex justify-between items-start m-b-2>
@@ -71,7 +71,7 @@
 					</div>
 					<span class="text-3 text-tcolor-1">04/2025 - Present</span>
 				</div>
-				<p>
+				<p text-14px>
 					Contributed to the transition to a gaming marketplace, working across the full stack to
 					develop vendor management systems and user-friendly dashboards. Implemented comprehensive
 					testing suites and helped architect backend solutions that improved the overall user
@@ -89,7 +89,7 @@
 					</div>
 					<span class="text-3 text-tcolor-1">10/2024 - 04/2025</span>
 				</div>
-				<p>
+				<p text-14px>
 					Led frontend development for their web app using React, building complex UI components.
 					Worked closely with the backend team on API design and joined daily standups and sprint
 					planning while getting solid feedback through code reviews.
@@ -106,7 +106,7 @@
 					</div>
 					<span class="text-3 text-tcolor-1">05/2024 - 08/2024</span>
 				</div>
-				<p>
+				<p text-14px>
 					Got hands-on experience building web apps with React and its ecosystem (Redux, TanStack
 					Query, Ant Design) plus worked on mobile development with Flutter. Learned a lot through
 					code reviews and feedback that helped me write cleaner, more maintainable code.
