@@ -3,7 +3,7 @@
 	import '@unocss/reset/tailwind.css'
 </script>
 
-<div class="min-h-screen min-w-screen font-sans color-tcolor bg-bgcolor">
+<div class="min-h-screen max-w-screen font-sans color-tcolor bg-bgcolor">
 	<header class=" h-16 p-4"></header>
 	<slot />
 </div>
