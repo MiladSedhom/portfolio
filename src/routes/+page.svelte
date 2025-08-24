@@ -69,23 +69,14 @@
 						<h3 class="fw-bold text-4 font-display">PlayPlex</h3>
 						<p class="text-3 text-tcolor-1">Fullstack Developer</p>
 					</div>
-					<span class="text-3 text-tcolor-1">5/2025 - Present</span>
+					<span class="text-3 text-tcolor-1">04/2025 - Present</span>
 				</div>
-				<ul class="text-14px text-tcolor-1 list-none list-inside space-y-1">
-					<li>
-						Built comprehensive e-commerce marketplace for gaming services with advanced dashboard
-						features
-					</li>
-					<li>
-						Architected backend systems with tRPC and PostgreSQL, creating order management
-						workflows and digital inventory systems with CSV import/export capabilities, implemented
-						stock reservation system during payment sessions
-					</li>
-					<li>
-						Implemented comprehensive testing suites including unit tests and integration tests,
-						ensuring code quality and system reliability
-					</li>
-				</ul>
+				<p>
+					Contributed to the transition to a gaming marketplace, working across the full stack to
+					develop vendor management systems and user-friendly dashboards. Implemented comprehensive
+					testing suites and helped architect backend solutions that improved the overall user
+					experience.
+				</p>
 			</div>
 		</Card>
 
@@ -96,21 +87,13 @@
 						<h3 class="fw-bold text-4 font-display">Bench HR</h3>
 						<p class="text-3 text-tcolor-1">Frontend Developer</p>
 					</div>
-					<span class="text-3 text-tcolor-1">10/2024 - 4/2025</span>
+					<span class="text-3 text-tcolor-1">10/2024 - 04/2025</span>
 				</div>
-				<ul class="text-14px text-tcolor-1 list-none list-inside space-y-1">
-					<li>
-						Led web application development using React with complex UI components and state
-						management
-					</li>
-					<li>
-						Participated in daily standups and sprint planning for cross-functional team
-						coordination
-					</li>
-					<li>
-						Contributed to API design discussions to ensure optimal frontend-backend integration
-					</li>
-				</ul>
+				<p>
+					Led frontend development for their web app using React, building complex UI components.
+					Worked closely with the backend team on API design and joined daily standups and sprint
+					planning while getting solid feedback through code reviews.
+				</p>
 			</div>
 		</Card>
 
@@ -119,17 +102,15 @@
 				<div flex justify-between items-start m-b-2>
 					<div>
 						<h3 class="fw-bold text-4 font-display">Kian Solutions</h3>
-						<p class="text-3 text-tcolor-1">
-							Fullstack Software <span class="font-semibold"> Intern </span>
-						</p>
+						<p class="text-3 text-tcolor-1">Fullstack Intern</p>
 					</div>
 					<span class="text-3 text-tcolor-1">05/2024 - 08/2024</span>
 				</div>
-				<ul class="text-14px text-tcolor-1 list-none list-inside space-y-1">
-					<li>Built web applications with React using Redux, TanStack Query, and Ant Design</li>
-					<li>Contributed to mobile app development using Flutter for cross-platform experience</li>
-					<li>Participated in code reviews and agile development processes</li>
-				</ul>
+				<p>
+					Got hands-on experience building web apps with React and its ecosystem (Redux, TanStack
+					Query, Ant Design) plus worked on mobile development with Flutter. Learned a lot through
+					code reviews and feedback that helped me write cleaner, more maintainable code.
+				</p>
 			</div>
 		</Card>
 	</section>
@@ -190,12 +171,6 @@
 </main>
 
 <style>
-	li::before {
-		content: '•';
-		font-size: 1.25rem;
-		margin-right: 6px;
-	}
-
 	.slide-prime-left {
 		animation: slide-prime-left 1000ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
